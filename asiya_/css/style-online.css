@@ -1,0 +1,29 @@
+
+input#button{
+cursor:pointer;
+padding:5px 25px; 
+background:#DC143C;
+border:2px #DC143C;
+color: white;
+font-size:20px;
+font-family: serif;
+border-radius:600px/80px;
+}
+
+input#button:hover, input#button:focus{
+	background-color : #80BFFF;
+}
+
+input#button:active{
+    background-color: #80BFFF;
+}
+
+#boxes{
+    margin-left: 320px;
+    border: 3px solid black;
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    border-radius:800px/100px;
+}
+

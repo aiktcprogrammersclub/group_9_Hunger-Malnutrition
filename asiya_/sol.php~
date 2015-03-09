@@ -1,0 +1,148 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Home</title>
+
+<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/ftg.css">
+	    <link rel="stylesheet" href="css/float.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css" />
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.7.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/tms-0.4.x.js"></script>
+	<script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:false,
+				nextBu:false,
+				playBu:false,
+				duration:1000,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:true,
+				banners:'fromRight',
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+
+</head>
+<body>
+<div class="red"><div class="center">
+	<div class="logo"><br><img src="images/14.gif" alt="" /></div>
+	<div class="navig">
+	<ul class="menu">
+		<li class="home-page current"> <a href="index.php"> &nbsp;Home&nbsp;<br /><br />  <span class="text1"> </span></a></li>
+		<li> <a href="about.php"> &nbsp;Malnutrition &nbsp;<br /><br /> <span class="text1">		</span></a></li>
+		<li><a href="hunger.php"> &nbsp;Hunger &nbsp;<br /><br /><span class="text1">			</span></a></li>
+		<li><a href="gallery.php">&nbsp;Gallery&nbsp;<br /><br /><span class="text1">			</span></a></li>
+
+
+		<li><a href="join.php">&nbsp;Join Us&nbsp;<br /><br /><span class="text1">			</span></a></li>
+						<li><?php if($_SESSION['uname']!=NULL) echo "<a href='logout.php'>&nbsp;Logout&nbsp;<br/><br/><span class='text1'></span></a>"; else echo "<a href='login.php'>&nbsp;Log In&nbsp;<br /><br /><span class='text1'></span></a>"; ?></li>
+	</ul></div>
+</div></div><br><br>
+
+<center>
+<table align="center" cellspacing="50" cellpadding="10">
+<tr>
+<td><div style="width: 800px; border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;border-bottom-left-radius:20px; height: 250px; background: #ff6347; box-shadow:1px 3px 2px 2px #454545;margin-top: 30px;">
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/asdf.jpg" width="700" align="center"  height="250"></td>
+
+	</tr>
+</table></center>
+<br><br>
+
+
+<div class="para">
+<p class="text16"><b> How to fight malnutrition?</b><br><br></p>
+<p class="text17">
+<b>* </b>Early screening and treatment of malnutrition has been shown to be effective in increasing body weight, increasing function, decreasing complication rate and even decreasing mortality. <br>
+<b>* </b>However, most European countries are facing hurdles when it comes to nationwide implementation of screening and treatment of malnutrition. This website provides information on the Dutch approach.<br><br></p>
+<p class="text16">
+<b>Treating malnutrition </b><br><br></p>
+<p class="text17">
+<b>Treatment for malnutrition depends on the underlying cause and how malnourished a person is.</b><br>
+<b>* </b>You may be given advice to use at home, or you may be treated at home under the supervision of a dietitian or other qualified healthcare professional. In some cases, hospital admission will be necessary.<br>
+<b>Treatment at home</b><br>
+<b>* </b>If you're treated under supervision at home, the healthcare professional helping you will discuss with you changes you should make to your diet. <br>
+<b>* </b>Your dietary plans will depend on your individual circumstances, but it's likely you'll be advised to gradually increase your intake of energy (calories), protein, carbohydrates, fluids, and vitamins and minerals. The aim is to reduce your risk of developing complications, such as infections, and to avoid hospital admission.<br>
+<b>* </b>The British Dietetic Association (BDA) has produced a factsheet called Malnutrition – overcoming the problem (PDF, 560kb), which provides some useful practical advice.<br>
+You may also be advised to take special nutritional supplements which can increase your energy and protein intake. You'll be helped to set targets and your progress will be regularly monitored.<br>
+<b>* </b>Depending on the cause of your malnutrition, you may also need additional help. For example, you may benefit from the help of a carer if poor mobility makes it difficult for you to shop for food or cook. Read more about getting care at home.<br>
+<b>* </b>If you have problems swallowing food or drink (dysphagia), you may be referred to a speech and language therapist (SLT) who can assess your swallowing and offer advice about a special diet that can help.<br>
+<b>* </b>If you can't eat enough to meet your body's needs, an artificial method of feeding may be required, such as a feeding tube. These are fitted in hospital but can be used at home (see below). <br><br>
+
+<b>Treatment in hospital</b><br>
+<b>* </b>You'll be seen by a number of healthcare professionals if you're admitted to hospital with malnutrition. They may include:<br>
+<b>* </b>a doctor who specialises in treating digestive conditions (a gastroenterologist) <br>
+<b>* </b>a dietitian <br>
+<b>* </b>a nurse who specialises in nutrition  <br>
+<b>* </b>a social worker <br>
+<b>* </b>If you don't have problems swallowing food, dietary changes may be recommended, with or without nutritional supplements.<br><br>
+<b>* </b>If you're unable to swallow food you may need a feeding tube. There are two types of feeding tubes:<br>
+<b>#  a nasogastric tube – </b>a tube that's passed down your nose and into your stomach<br>
+<b>#  a percutaneous endoscopic gastrostomy (PEG) tube – </b>a tube that's surgically placed directly into your stomach through your abdomen (tummy) <br><br>
+
+<b>Parenteral nutrition</b><br>
+<b>* </b>If a feeding tube isn't suitable, it may be necessary to deliver nutrition directly into your bloodstream through a drip into your vein. This is known as parenteral nutrition and it allows you to receive nutrients that you can't get through eating.<br>
+<b>* </b>You'll be prescribed a solution that's tailored to your individual dietary needs. The solution may include a combination of nutrients, including carbohydrates and sugars, proteins, fats, electrolytes (salts) and a variety of vitamins and minerals.<br><br>
+
+<b>Additional treatment</b><br>
+<b>* </b>The underlying cause of your malnutrition may also need to be treated.<br>
+<b>* </b>The amount of time you'll spend in hospital will depend on your general state of health and what's causing your malnutrition. In some cases it may be possible to return home while receiving treatment.
+<br><br>
+<b>Treating children</b><br>
+<b>* </b>In the UK, many cases of malnutrition in children are caused by long-term health conditions and hospital treatment is often required.<br>
+<b>* </b>Childhood malnutrition can sometimes be treated with additional nutrients. Your child may need to take special supplements and eat foods high in energy and nutrients. The underlying cause of their malnutrition may also need to be treated.<br>
+<b>* </b>Severely malnourished children need to be fed and rehydrated with great care and so can't be given a normal diet straight away. Once their condition stabilises they can gradually be introduced to a normal diet.<br>
+<b>* </b>Malnutrition due to lack of food is a child protection issue, which means the police and social services need to be informed.<br>
+</p>
+</div>
+
+<div class="clear"></div>
+<div class="linr"></div>
+<div class="clear"></div>
+<div class="footer">
+
+</div>
+<div class="social">
+  <a href="https://www.facebook.com/pages/World-Hunger-Malnutrition/337393543107372" class="link facebook" target="_parent"><br><br><i><b><h6 style="font-size:100%">f&nbsp;</h6></a><i class="fa fa-facebook-square"></i></a>
+
+  <a href="https://twitter.com/kentpage/status/526794309665038337" class="link twitter" target="_parent"><br><i><h6 style="font-size:120%">t&nbsp;</h6></a><span class="fa fa-twitter"></span></a>
+  <a href="https://plus.google.com/u/0/108352243528078155942/videos" class="link google-plus" target="_parent"><br><i>g+<span class="fa fa-google-plus-square"></span></a>
+</div> 
+
+</body>
+
+</html>

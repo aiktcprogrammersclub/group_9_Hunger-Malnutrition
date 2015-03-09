@@ -1,0 +1,55 @@
+html, body {width:100%; padding:0; margin:0}
+body {font:14px/25px Arial, Helvetica, sans-serif;color:#000000;min-width:960px;background:#fafaf2}
+.red{ height:90px; width:100%; background:url(../images/09.png) repeat-x  }
+.center{ margin:0 auto; width:950px;}
+.logo{ position:relative; float:left ; left:-100px;}
+.navig{ position:relative; float:right;}
+.navig1{ position:relative; float:center;}
+a {text-decoration:none; cursor:pointer}
+a:hover {text-decoration:none}
+ul {margin:0; list-style-image:none; padding-top:30px; }
+ul.menu {margin:0 2px 0 0;  display:inline-block; float:right; font-family: 'Playfair Display', serif;}
+ul.menu li {float:left; line-height:17px; margin:0 0 0 0;  border-left:#ffffff 1px solid; font-family: 'Playfair Display', serif;text-align:center}
+ul.menu li a {font-size:29px;  color:#fff;  display:block; padding:15px 28px 24px 28px 28px}
+ul.menu li a span { font-size:12px; padding-top:10px; text-align:center}
+ul.menu li.home-page {display:inline-block; border:none !important}
+ul.menu li a:hover , ul.menu li.current { color:#f1ae6e;}
+ul.menu li.home-page a {padding:15px 22px 24px 23px 24px !important}
+.slider{ padding-top:50px;}
+.one{ position:relative; float:left; width:265px; height:185px; background:url(../images/11.jpeg); padding-top:40px; padding-left:35px; margin-left:5px; margin-top:40px;}
+.two{ position:relative; float:left; width:265px; height:185px;padding-top:40px; padding-left:35px;background:url(../images/11.jpeg); margin-left:20px;margin-top:40px;}
+.three{ position:relative; float:left; width:265px; height:185px;padding-top:40px; padding-left:35px; background:url(../images/11.jpeg); margin-left:20px; margin-top:40px;  }
+.text2{ font-size:36px; font-family: 'Playfair Display', serif; color:#fafaf2;}
+.text3{ font-size:12px; color:#fafaf2;font-family: 'Playfair Display', serif; line-height:1.5 }
+.text4{ color:#d98943; font-size:21px; font-family: 'Playfair Display', serif; }
+.text4 a{ color:#d98943;}
+.text5{font-size:36px; font-family: 'Playfair Display', serif; color:#fafaf2;}
+.linr{ height:200px; border-bottom:#4682b4 1px dashed;}
+
+.one1{ position:relative; float:left; width:300px; height:40px;border-bottom:#4682b4 1px dashed;margin-left:5px; }
+.two2{ position:relative; float:left; width:300px; height:40px;border-bottom:#4682b4 1px dashed; margin-left:20px;}
+.three3{ position:relative; float:left; width:300px; height:40px;border-bottom:#4682b4 1px dashed; margin-left:20px; }
+.who{  position:relative; float:left; width:300px; margin-top:40px;} 
+.where{  position:relative; float:left;width:300px;margin-top:40px;margin-left:25px;}
+.what{  position:relative; float:left;width:300px;margin-top:40px; margin-left:25px;}
+.text6{ font-size:37px; color:#000033; font-family: 'Playfair Display', serif; }
+.text7{ font-size:17px; color:#4682b4}
+.text8{ font-size:12px; color:#000; line-height:1.5}
+.content{ position:relative; margin-top:40px;}
+ul.yellow{ list-style:url(../images/07.png); font-size:12px; color:#000; line-height:1.5; margin-left:20px; margin-top:0}
+.text9{ font-size:12px; color:#000; line-height:1.5;}
+.text10{ font-size:30px; font-family: 'Playfair Display', serif; color:#800000;}
+.text11{ font-size:16px; font-family: 'Playfair Display', serif; color:#800000;}
+.text12{ font-size:25px; font-family: 'Playfair Display', serif; color:#000000;}
+.text13{ font-size:25px; font-family: 'Playfair Display', serif; color:#696969;}
+.text14{ font-size:16px; font-family: 'Playfair Display', serif; color:#696969;}
+.text15{ font-size:20px; font-family: 'Playfair Display', serif; color:#191970;}
+.text16{ font-size:30px; font-family: 'Playfair Display', serif; color:#191970;}
+.text17{ font-size:16px; font-family: 'Playfair Display', serif; color:#191970;}
+.footer{ margin-top:100px;}
+.vlinks{	position:relative;	float:right;color:#ac2a1e; }
+.vlinks a{color:#ac2a1e; }
+.vlinks a:hover{ color:#d98943}
+.copy{ color:#ac2a1e; font-size:13px; position:relative;	float:left;	}
+.para{ margin-top: 1px; margin-left: 100px;  margin-right: 300px;}
+.tab{ margin-top: 1px; margin-left: 1px;  margin-right: 100px;}

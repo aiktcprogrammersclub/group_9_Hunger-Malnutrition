@@ -1,0 +1,147 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Home</title>
+
+<meta charset="utf-8" />
+        <link rel="stylesheet" href="css/ftg.css">
+	    <link rel="stylesheet" href="css/float.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css" />
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.7.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/tms-0.4.x.js"></script>
+	<script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:false,
+				nextBu:false,
+				playBu:false,
+				duration:1000,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:true,
+				banners:'fromRight',
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+<div class="red"><div class="center">
+	<div class="logo"><br><img src="images/14.gif" alt="" /></div>
+	<div class="navig">
+	<ul class="menu">
+		<li class="home-page current"> <a href="index.php"> &nbsp;Home&nbsp;<br /><br />  <span class="text1"> </span></a></li>
+		<li> <a href="about.php"> &nbsp;Malnutrition &nbsp;<br /><br /> <span class="text1">		</span></a></li>
+		<li><a href="hunger.php"> &nbsp;Hunger &nbsp;<br /><br /><span class="text1">			</span></a></li>
+		<li><a href="gallery.php">&nbsp;Gallery&nbsp;<br /><br /><span class="text1">			</span></a></li>
+
+
+		<li><a href="join.php">&nbsp;Join Us&nbsp;<br /><br /><span class="text1">			</span></a></li>
+						<li><?php if($_SESSION['uname']!=NULL) echo "<a href='logout.php'>&nbsp;Logout&nbsp;<br /><br /><span class='text1'>			</span></a>"; else echo "<a href='login.php'>&nbsp;Log In&nbsp;<br /><br /><span class='text1'>			</span></a>"; ?></li>
+	</ul></div>
+</div></div>
+<br>
+<hr color="#4682b4">
+<marquee behaviour="scroll" scrollamount=30 onmouseover="javascript:this.setAttribute('scrollamount','0');" onmouseout="javascript:this.setAttribute('scrollamount','10');">
+<a href=""><img src="images/k.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a herf=""><img src="images/b.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href=""><img src="images/k.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href=""><img src="images/k.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href=""><img src="images/k.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href=""><img src="images/k.jpg" border="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</marquee>
+<hr color="#4682b4">
+
+<br>
+<div class="para">
+<p class="text16"> <b> What is Malnutrition ?</p></b>
+<p class="text17"> <br>&nbsp;&nbsp;&nbsp;<b> * </b> A malnourished person finds that their body has difficulty doing normal things such as growing and resisting disease. Physical work becomes problematic and even learning abilities can be diminished. For women, pregnancy becomes risky and they cannot be sure of producing nourishing breast milk. <br>
+&nbsp;&nbsp;&nbsp;<b> * </b>When a person is not getting enough food or not getting the right sort of food, malnutrition is just around the corner. Even if people get enough to eat, they will become malnourished if the food they eat does not provide the proper amounts of micronutrients - vitamins and minerals - to meet daily nutritional requirements.<br>
+&nbsp;&nbsp;&nbsp;<b>* </b>Disease and malnutrition are closely linked. Sometimes disease is the result of malnutrition, sometimes it is a contributing cause. In fact, malnutrition is the largest single contributor to disease in the world, according to the UN's Standing Committee on Nutrition (SCN).<br>
+&nbsp;&nbsp;&nbsp;<b>* </b>Malnutrition at an early age leads to reduced physical and mental development during childhood. Stunting, for example, affects more than 147 million pre-schoolers in developing countries, according to SCN's World Nutrition Situation 5th report. Iodine deficiency, the same report shows, is the world's greatest single cause of mental retardation and brain damage.<br>
+&nbsp;&nbsp;&nbsp;<b>* </b>Undernutrition affects school performance and studies have shown it often leads to a lower income as an adult. It also causes women to give birth to low birth-weight babies.</p>
+
+ <p class="text17">&nbsp;&nbsp;&nbsp;<b>* </b>Nutrition in 2 Minutes :<br>&nbsp;&nbsp;&nbsp;
+Why is nutrition so important? Find out in just two minutes with this video that will tell you everything you need to &nbsp;&nbsp;&nbsp;&nbsp;know about child malnutrition and how we can beat it.
+	
+<br><br>
+<div class="text16"><center><video width="320" height="240" controls>
+  <source src="2.mp4" type="video/mp4">
+<source src="2.ogg" type="video/ogg">
+</center>
+
+</video></div><br><br>
+
+<p class="text16"> <b>What are The Types of Malnutrtion..?</p></b><br>
+<p class="text17">&nbsp;&nbsp;&nbsp;<b> * </b>Each form of malnutrition depends on what nutrients are missing in the diet, for how long and at what age.<br>&nbsp;&nbsp;&nbsp;&nbsp;There are two major types of malnutrition: 
+&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<b> --> Protein-energy malnutrition - </b>resulting from deficiencies in any or all nutrients<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The most basic kind is called protein energy malnutrition . It results from a diet lacking in energy and protein because &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a deficit in all major macronutrients, such as carbohydrates, fats and proteins. <br>
+
+&nbsp;&nbsp;&nbsp;<b> --> Micronutrient deficiency diseases - </b>resulting from a deficiency of specific micronutrients
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Micronutrient deficiencies in children are associated with 10% of all children's deaths. Micronutrient Deficiencies are &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspwhen a child is lacking essential vitamins or minerals such as Vitamin A, iron, and zinc. These deficiencies are caused &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by a long-term lack of nutritious food or they can be caused by infections such as worms.<br><br>
+
+<p class="text16"><b>   Causes Of Malnutrition :</p><br> </b>
+<p class="text17">Malnutrition is caused by a lack of nutrients in your diet. 
+This is either due to an inadequate diet or problems absorbing nutrients from food. 
+Medical conditions
+Medical conditions that can lead to malnutrition include:
+a condition that causes a lack of appetite, such as cancer, liver disease, persistent pain or nausea 
+a mental health condition, such as depression or schizophrenia, which may affect your ability to look after yourself 
+a health condition that requires frequent hospital admissions 
+a health condition that disrupts your body’s ability to digest food or absorb nutrients, such as Crohn's disease or ulcerative colitis 
+dementia – people with dementia may be unable to communicate their needs when it comes to eating 
+dysphagia – a condition that makes swallowing difficult or painful  
+persistent vomiting or diarrhoea  
+an eating disorder, such as anorexia nervosa 
+Some types of medication may increase your risk of developing malnutrition. More than 250 types of medicine are known to disrupt the body’s ability to absorb and then break down nutrients. 
+You may also be at risk of becoming malnourished if your body has an increased demand for energy – for example, if it's trying to heal itself after major surgery, or a serious injury such as a burn, or if you experience involuntary movements, such as a tremor.</p><br> </b>
+<p class="text16"><b>  Symtomps Of Malnutrition :</p><br> </b>
+<p class="text16"><b>  Diagnosing  Malnutrition :</p><br> </b>
+<p class="text16"><b> Prevention fromMalnutrition :</p><br> </b>
+	</div>
+</body>
+<div class="clear"></div>
+<div class="linr"></div>
+<div class="clear"></div>
+<div class="footer">
+
+</div>
+ 
+<div class="social">
+  <a href="https://www.facebook.com/pages/World-Hunger-Malnutrition/337393543107372" class="link facebook" target="_parent"><br><br><i><b><h6 style="font-size:100%">f&nbsp;</h6></a><i class="fa fa-facebook-square"></i></a>
+
+  <a href="https://twitter.com/kentpage/status/526794309665038337" class="link twitter" target="_parent"><br><i><h6 style="font-size:120%">t&nbsp;</h6></a><span class="fa fa-twitter"></span></a>
+  <a href="https://plus.google.com/u/0/108352243528078155942/videos" class="link google-plus" target="_parent"><br><i>g+<span class="fa fa-google-plus-square"></span></a>
+</div> 
+
+</html>
